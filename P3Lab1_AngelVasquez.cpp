@@ -4,7 +4,7 @@ using std::cin;
 using std::endl;
 int cambionum(int n );
 int main(){
-    int n, sum = 0 , num1= 1 ,num2 =1 , contrl = 0 ;
+    int n, sum = 0 , num1= 1 ,num2 =1 , contrl = 0 , contrl2= 4 , contrl3 =2;
     do{
     	cout << "entrada:";
     	cin >> n;
@@ -12,7 +12,7 @@ int main(){
 	}while(n >= 100);
      do {
      	
-        if (contrl % 2 == 0 ){
+        if (contrl % contrl3 == 0 ){
 		   num1 = cambionum(num1 +1);
 		  
 		}
@@ -21,9 +21,19 @@ int main(){
 		
 		}
 	    contrl++;
+	    if(num1+num2 != contrl2 && num1 + num2 > contrl2){
+		   num1 = 1;
+		   num2= 1;
+		   contrl3++;
+		   if(contrl3 > 4){
+		       contrl3 = 2;
+		   }
+		}
 	    sum = num1 + num2 ;
-     	if (sum % 2 == 0 && sum < n){
+     	if (sum % 2 == 0 && sum < n && sum == contrl2){
 		   cout << num1 << "+" << num2 << "=" << sum << endl;
+		   contrl2++;
+		   contrl2++;
 		}
 	} while (sum < n );
     
