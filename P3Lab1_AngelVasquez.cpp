@@ -8,16 +8,17 @@ int main(){
     do{
     	cout << "entrada:";
     	cin >> n;
+    	cout << "salida:" << endl;
 	}while(n >= 100);
      do {
      	
         if (contrl % 2 == 0 ){
 		   num1 = cambionum(num1 +1);
-		   cout << "1\n";
+		  
 		}
 		else{
 			num2 = cambionum(num2 +1);
-			cout << "2\n";
+		
 		}
 	    contrl++;
 	    sum = num1 + num2 ;
