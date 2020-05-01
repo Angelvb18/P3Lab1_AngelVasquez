@@ -25,8 +25,8 @@ int main(){
 		   num1 = 1;
 		   num2= 1;
 		   contrl3++;
-		   if(contrl3 > 4){
-		       contrl3 = 2;
+		   if(contrl3 > 10){
+		       contrl3 = 1;
 		   }
 		}
 	    sum = num1 + num2 ;
